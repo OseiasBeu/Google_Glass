@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+.direita {
+text-align: right;
+}
+
+section#conteudo {
+	width:1000px;
+	margin: auto;
+}
+
+iframe#frame-spec {
+	width: 425px;
+	height: 280px;
+	border: none;
+	overflow: hidden;
+}
+/*
+--------------------------------------------------------------------
+#Em teoria essa linha de código deveria eliminar a barra de 
+rolagem vertical da iframe, no entanto, ela não estava funcionando. 
+Fiz um ajuste no body do arquivo google-glass.html, 
+dentro das configuarações do CSS3 acrescentei a linha:
+ 	'overflow-Y: hidden;'
+ ela será responsável por eliminar a barra de rolagem vertical do iframe.#
+  ------------------------------------------------------------------------
+iframe#frame-spec -scrollbar{
+	display: hidden;
+}
+iframe#frame-spec{ 
+overflow-y: none;
+}
+*/

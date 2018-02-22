@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<HTML lang="pt-br">
+<head>
+ <title> Projeto Glass</title>
+ <style>
+ h1 {
+  font-family: Arial;
+  font-size:30pt;
+  color: Black
+  text-shadow: 2pt 2pt 2pt black
+ }
+ </style>
+ 
+ </head>
+ 
+ <body>
+ <h1> Glass </h1>
+ 
+ </body>
+ </html>
+ 

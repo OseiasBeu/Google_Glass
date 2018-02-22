@@ -1,0 +1,355 @@
+﻿@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Exo');
+@import url('https://fonts.googleapis.com/css?family=Bubblegum+Sans|Exo');
+@import url('https://fonts.googleapis.com/css?family=Bubblegum+Sans|Exo|Titillium+Web');
+@font-face
+{
+font-family:'fontelogo';
+src: url ("../_fonts/bubblegum-sans-regular.otf");
+}
+
+
+/*Definição do corpo da página*/
+
+body
+{ 
+		font-family: arial, sans-serif;
+    	background-color: #dddddd; 
+		color: rgba(0,0,0,1);   
+   }
+
+/*Alinhamento da Página, centralização e
+estruturação*/
+
+   div#interface
+ {	
+	width: 920px;
+	background-color: #ffffff;
+	margin-top: -10px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+	padding: 10px; 
+ }
+
+section#corpo {
+
+	display: block;
+	width: 525px;
+	float: left;
+	border-right: 1px solid #606060;
+	padding-right: 15px;
+}
+
+/* Formatação dos artigos*/
+
+ article#noticia-principal h2
+ {
+ 	font-size: 12pt;
+ 	color: #606060;
+ 	background-color: #dddddd;
+ 	padding: 5px 0px 5px 10px;
+ 	margin: 10px 0px 10px 0px;
+ }	
+
+/*Formatação do cabaçalho do artigo*/
+
+header#cabecalho-artigo h1
+{
+font-family: 'Bubblegum Sans', cursive;
+font-size:20pt;
+color:#606060;
+margin-bottom: 0px;
+margin-top:0px;
+}
+
+header#cabecalho-artigo h2
+{
+font-family: arial, sans-serif;
+font-size:10pt;
+color:#cecece;
+background-color: #ffffff;	
+margin:0px; 
+}
+
+
+header#cabecalho-artigo h3
+{
+	font-size:10pt;
+	color:#606060;	
+}
+/*formatação genêrica da classe direita */
+
+.direira {
+	text-align: right;
+}
+
+/*Formatação da aside*/
+
+aside#lateral{
+	display: block;
+	width: 350px;
+	float: right;
+	background-color: #dddddd;
+	padding: 10px;
+	margin-top: 15px;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+	}
+
+	footer#rodape{
+		clear:both;
+		border-top:1px solid #606060;
+	}
+ 	footer#rodape  p {
+    text-align: center; 
+
+ 	}
+/*Formatação dos títulos da aside */
+
+aside#lateral h1
+{
+	font-family: 'Bubblegum Sans', cursive;
+	font-size:20pt;
+	color:#606060;
+	margin-top: 0px;
+}
+
+
+aside#lateral h2
+{
+	background-color: #606060;
+	font-size:12pt;
+	color:#ffffff;
+	padding: 5px;	
+}
+/* Formatações condicionais (genéricas)*/
+
+ p 
+ {
+	text-align:"center";
+	text-indent:50px;
+  }
+  
+  a
+  {
+  	color:#606060;
+  	text-decoration: none;
+  }
+  a:hover 
+  {
+  	text-decoration: underline;
+  }
+    
+    h1{
+     text-align:"center";
+	 font-family:Arial;
+     font-size:25pt;
+     /*text-shadow: 1pt 1pt 1pt black;*/
+		}
+		
+		h2
+		  {
+     font-family:Arial;
+	 text-align:"center";
+     font-size:25pt;
+   /*text-shadow: 1pt 1pt 1pt black;*/
+		  }
+
+		  h3
+		    {
+	font-family: arial, sans-serif;
+	text-align: left;
+	font-size:10pt;
+	color:#eacece;
+		  }
+
+
+header#cabecalho img#icone
+{
+
+			position: absolute;
+			left: 990px;
+			top: 100px;
+}
+
+
+
+header#cabecalho 
+ {
+	 border-bottom: 1px  solid #606060;
+	 height: 150px;
+     background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 100px;	
+   }
+
+
+ header#cabecalho h1{
+		font-family: 'Bubblegum Sans', cursive;
+		font-size: 40px;
+		color: #606060;
+		text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+		padding: 0px;
+		margin-bottom: 0px;
+		margin-top: 30px; 
+		  		  }
+		  		  
+
+
+header#cabecalho h2{
+	font-family: 'Titillium Web', sans-serif;
+	color: #e2bcbc;	
+	font-size: 15pt;
+	padding: 0px;
+	margin-top: -20px;
+}
+		  
+/* Formatacao de imagens com legendas*/
+
+figure.foto-legenda 
+{
+	position: relative;
+	border: 8px solid white;
+	box-shadow: 1px 1px 5px black;
+}
+
+figure.foto-legenda img
+{
+	width:  100%;
+	height: 100%;
+}
+
+figure.foto-legenda figcaption
+{
+	opacity:0;
+	position:absolute;
+	top:1px;
+	background-color: rgba(0,0,0,.4);
+	color: white;
+	width:   100%;
+	height:  100%;
+	padding: 1px;
+	box-sizing: border-box;
+	
+}
+
+figure.foto-legenda:hover figcaption
+{
+	opacity: 1;
+}
+
+
+
+
+/*Formatao do menu principal*/
+
+nav#menu 
+{
+	display: block;
+}
+nav#menu ul
+{
+	list-style: none;
+	text-transform: uppercase;
+	position: absolute;
+	top:  -10px;
+	left: 500px;
+}
+
+nav#menu li
+{
+	display: inline-block;
+	background: #dddddd;
+	padding:10px;
+	margin: 2px;	
+	transition: background-color 1s;
+}
+
+
+nav#menu li:hover 
+{
+	background-color: #606060;
+}
+
+nav#menu h1
+{
+	display: none;
+}
+
+nav#menu a: 
+{
+	color: #000000;
+	text-decoration: none;
+}
+
+nav#menu a: hover{
+	color: #ffffff;
+	text-decoration: underline;
+	
+}		
+
+
+/*Formatação da tabela*/
+
+table#table 
+{
+ border: 1px solid #606060;
+ border-spacing: 0px;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+table#tabela td
+{
+  border:  1px solid #606060;
+  padding:10px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+table#tabela  td.ce 
+ {
+	color:#ffffff;
+	background-color:#606060;
+	vertical-align: top;
+	font-weight: bold;
+
+}
+
+table#tabela  td.cd
+ {
+	
+	background-color:#cecece;
+	vertical-align: top;
+	font-weight: bolder;
+	text-align: left;
+}
+
+
+table#tabela caption {
+	color: #888888;
+	font-size:  13pt;
+	font-weight: bolder;
+
+        }
+table#tabela caption span
+		{
+	 display: block;
+	 float: right;
+	 color: #000000;
+	 font-size: 8pt;
+	 margin-top:10px;
+	 	}
+
+
+/*Formatação dos vídeos*/
+
+
+
+video#fazer{
+
+	margin-left: 68px;
+}
+
+video#oneday{
+	width: 350px;
+}
